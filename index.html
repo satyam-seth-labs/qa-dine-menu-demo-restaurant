@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="en" data-theme="ELEGANT" class="scroll-smooth"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="icon" href="./favicon.ico"><meta name="generator" content="Astro v7.2.0"><meta name="description" content="Test is Best"><!-- SEO Tags --><title>Demo Restaurant | Digital Menu</title><link rel="stylesheet" href="./assets/index._QSHP6Cc.css"></head><body class="bg-themeBgPrimary text-themeTextPrimary min-h-screen antialiased selection:bg-themeAccentPrimary selection:text-white pb-24"><!-- Global Background Accent Gradients --><div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none opacity-40"><div class="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-themeAccentPrimary to-transparent blur-[120px]"></div><div class="absolute -bottom-[10%] -right-[10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-themeAccentSecondary to-transparent blur-[120px]"></div></div><!-- Main Responsive Wrapper --><div class="max-w-md mx-auto px-4 md:max-w-xl lg:max-w-2xl min-h-screen flex flex-col"><header class="py-8 text-center flex flex-col items-center justify-center animate-slide-up"><div class="w-20 h-20 rounded-full overflow-hidden glass-effect bg-themeBgSecondary/40 flex items-center justify-center shadow-md border-themeBorder/60 hover:scale-105 transition-all duration-300 mb-4 z-10"><img src="./images/1000275885.png" alt="Demo Restaurant" class="w-full h-full object-cover"></div><h1 class="text-3xl font-extrabold text-themeTextPrimary tracking-tight">Demo Restaurant</h1><p class="text-sm text-themeTextSecondary mt-1.5 max-w-sm px-4">Test is Best</p><!-- Restaurant Food Type Indicator --><div class="flex justify-center gap-4 mt-4 animate-slide-up" style="animation-delay: 0.05s;"><div class="flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-[#2e7d32] bg-[#2e7d32]/10 border border-[#2e7d32]/20 hover:scale-105 transition-all duration-300 shadow-sm"><span class="w-2.5 h-2.5 rounded-full bg-[#4caf50] border border-[#2e7d32]"></span>VEG</div><div class="flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-[#c62828] bg-[#c62828]/10 border border-[#c62828]/20 hover:scale-105 transition-all duration-300 shadow-sm"><span class="w-2.5 h-2.5 rounded-full bg-[#f44336] border border-[#c62828]"></span>NON-VEG</div></div><!-- Contact Info details --><div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 mt-4 text-[11px] text-themeTextSecondary/80"><a href="https://maps.app.goo.gl/6uTBdXihJsqQd3vK7" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-themeAccentPrimary hover:underline transition-colors duration-200">📍 Roadways Lalganj</a><span class="w-1.5 h-1.5 rounded-full bg-themeBorder hidden sm:inline-block"></span><a href="tel:+917235973436" class="flex items-center gap-1 hover:text-themeAccentPrimary hover:underline transition-colors duration-200">📞 +917235973436</a><span class="w-1.5 h-1.5 rounded-full bg-themeBorder hidden sm:inline-block"></span><span class="flex items-center gap-1">🕒 Mon-Thu: 12:00-23:00 | Fri: 12:00-23:30 | Sat: Closed | Sun: 11:00-22:00</span></div></header><div class="w-full my-4 animate-slide-up" style="animation-delay: 0.05s;"><h3 class="text-xs font-bold text-themeTextSecondary uppercase tracking-widest mb-3">Special Offers</h3><div class="flex overflow-x-auto no-scrollbar gap-4 pb-2"><div class="flex-shrink-0 w-72 rounded-2xl border border-themeBorder bg-themeCardBg/40 overflow-hidden flex flex-col justify-between p-4 relative glass-card"><div class="absolute inset-0 -z-10 opacity-15"><img src="https://dinelab.pythonanywhere.com/media/restaurants/offers/WhatsApp_Image_2026-07-19_at_2.19.09_AM.jpeg" alt="" class="w-full h-full object-cover"></div><div><div class="flex items-center justify-between gap-2"><span class="text-sm font-extrabold text-themeAccentPrimary">10% OFF</span><span class="text-[9px] font-bold px-2 py-0.5 rounded-md bg-themeAccentPrimary/20 text-themeAccentPrimary border border-themeAccentPrimary/30 uppercase">Code: ASP</span></div><p class="text-xs text-themeTextSecondary mt-2 line-clamp-2"></p></div><div class="mt-4 text-[9px] text-themeTextSecondary/70">Save 10% on your items</div></div></div></div><div class="relative w-full my-6 animate-slide-up flex flex-col gap-3.5" style="animation-delay: 0.1s;"><!-- Search Input Wrapper --><div class="relative w-full"><div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none"><svg class="h-5 w-5 text-themeTextSecondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div><input type="text" id="menu-search" placeholder="Search dishes, tags, or ingredients..." class="w-full pl-11 pr-10 py-3.5 rounded-2xl glass-effect bg-themeBgSecondary/30 border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/70 focus:outline-none focus:ring-2 focus:ring-themeAccentPrimary/50 focus:border-themeAccentPrimary transition-all duration-300 shadow-sm"><button id="search-clear" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-themeTextSecondary hover:text-themeAccentPrimary opacity-0 pointer-events-none transition-all duration-200" aria-label="Clear search"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><!-- Interactive Veg / Non-Veg Quick Filters --><div class="flex items-center justify-center gap-3"><button class="food-filter-btn px-4 py-1.5 rounded-full text-xs font-bold border transition-all duration-300 bg-themeAccentPrimary text-white border-themeAccentPrimary shadow-sm active:scale-95" data-filter="ALL">All</button><button class="food-filter-btn px-4 py-1.5 rounded-full text-xs font-bold border transition-all duration-300 border-themeBorder bg-themeBgSecondary/40 text-themeTextSecondary hover:text-green-500 hover:border-green-500/30 hover:bg-green-500/5 flex items-center gap-1.5 active:scale-95" data-filter="VEG"><span class="w-2.5 h-2.5 rounded-full bg-[#4caf50] border border-[#2e7d32]"></span>Veg Only</button><button class="food-filter-btn px-4 py-1.5 rounded-full text-xs font-bold border transition-all duration-300 border-themeBorder bg-themeBgSecondary/40 text-themeTextSecondary hover:text-red-500 hover:border-red-500/30 hover:bg-red-500/5 flex items-center gap-1.5 active:scale-95" data-filter="NON_VEG"><span class="w-2.5 h-2.5 rounded-full bg-[#f44336] border border-[#c62828]"></span>Non-Veg Only</button></div></div><!-- No Results Placeholder --><div id="no-results" class="hidden flex-col items-center justify-center py-16 text-center animate-fade-in"><div class="text-5xl mb-4">🔍</div><h3 class="text-lg font-bold text-themeTextPrimary">No dishes found</h3><p class="text-sm text-themeTextSecondary mt-1">Try checking your spelling or search for another term.</p></div><script type="module">var e=document.getElementById(`menu-search`),t=document.getElementById(`search-clear`),n=document.getElementById(`no-results`),r=document.querySelectorAll(`.category-section`),i=document.querySelectorAll(`.food-filter-btn`),a=`ALL`;function o(){let i=e.value.toLowerCase().trim();i.length>0?t.classList.remove(`opacity-0`,`pointer-events-none`):t.classList.add(`opacity-0`,`pointer-events-none`);let o=0;r.forEach(e=>{let t=0;e.querySelectorAll(`.menu-item-card`).forEach(e=>{let n=e.getAttribute(`data-search-terms`)||``,r=e.getAttribute(`data-food-type`)||``,s=n.includes(i),c=!0;a===`VEG`?c=r===`VEG`||r===`BOTH`:a===`NON_VEG`&&(c=r===`NON_VEG`||r===`BOTH`),s&&c?(e.style.display=``,e.classList.add(`animate-fade-in`),t++,o++):(e.style.display=`none`,e.classList.remove(`animate-fade-in`))}),t===0?e.style.display=`none`:e.style.display=``}),o===0&&(i.length>0||a!==`ALL`)?(n.classList.remove(`hidden`),n.classList.add(`flex`)):(n.classList.add(`hidden`),n.classList.remove(`flex`))}i.forEach(e=>{e.addEventListener(`click`,()=>{let t=e.getAttribute(`data-filter`);a!==t&&(a=t,i.forEach(e=>{let n=e.getAttribute(`data-filter`);e.classList.remove(`bg-themeAccentPrimary`,`text-white`,`border-themeAccentPrimary`,`shadow-sm`,`bg-green-500/10`,`text-[#2e7d32]`,`border-green-500/30`,`bg-red-500/10`,`text-[#c62828]`,`border-red-500/30`),e.classList.add(`border-themeBorder`,`bg-themeBgSecondary/40`,`text-themeTextSecondary`),n===t&&(e.classList.remove(`border-themeBorder`,`bg-themeBgSecondary/40`,`text-themeTextSecondary`),t===`ALL`?e.classList.add(`bg-themeAccentPrimary`,`text-white`,`border-themeAccentPrimary`,`shadow-sm`):t===`VEG`?e.classList.add(`bg-green-500/10`,`text-[#2e7d32]`,`border-green-500/30`,`shadow-sm`):t===`NON_VEG`&&e.classList.add(`bg-red-500/10`,`text-[#c62828]`,`border-red-500/30`,`shadow-sm`))}),o())})}),e?.addEventListener(`input`,o),t?.addEventListener(`click`,()=>{e.value=``,o(),e.focus()});</script><div class="sticky top-0 z-40 w-full py-3 -mx-4 px-4 bg-themeBgPrimary/85 backdrop-blur-md border-b border-themeBorder/40 animate-slide-up" style="animation-delay: 0.15s;" data-astro-cid-okpgx4fs><div class="flex items-center overflow-x-auto no-scrollbar gap-2 max-w-full" id="category-nav-scroll" data-astro-cid-okpgx4fs><a href="#cat-1" class="category-tab flex items-center gap-1.5 px-4 py-2 rounded-full border text-sm font-medium whitespace-nowrap transition-all duration-300" data-category="cat-1" data-index="0" data-astro-cid-okpgx4fs><span data-astro-cid-okpgx4fs>Starter</span></a></div></div><script type="module">var e=document.querySelectorAll(`.category-tab`),t=document.getElementById(`category-nav-scroll`);e.forEach(t=>{t.addEventListener(`click`,n=>{n.preventDefault();let r=t.getAttribute(`href`)?.substring(1)||``,a=document.getElementById(r);if(a){let n=document.body.getBoundingClientRect().top,r=a.getBoundingClientRect().top-n-80;window.scrollTo({top:r,behavior:`smooth`}),e.forEach(e=>e.classList.remove(`active`)),t.classList.add(`active`),i(t)}})});var n=document.querySelectorAll(`.category-section`),r=new IntersectionObserver(t=>{t.forEach(t=>{if(t.isIntersecting){let n=t.target.getAttribute(`id`);e.forEach(t=>{t.getAttribute(`href`)?.substring(1)===n&&(e.forEach(e=>e.classList.remove(`active`)),t.classList.add(`active`),i(t))})}})},{root:null,rootMargin:`-10% 0px -75% 0px`,threshold:0});n.forEach(e=>r.observe(e));function i(e){if(!t)return;let n=t.offsetWidth,r=e.offsetLeft,i=e.offsetWidth,a=r-n/2+i/2;t.scrollTo({left:a,behavior:`smooth`})}</script><main class="space-y-10 mt-6 flex-grow"><section id="cat-1" class="category-section space-y-4 scroll-mt-24 animate-slide-up" style="animation-delay: 0.2s;"><div class="flex items-center gap-2.5 pb-2 border-b border-themeBorder/40"><h2 class="text-xl font-extrabold text-themeTextPrimary tracking-tight">Starter</h2><span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-themeBgSecondary border border-themeBorder text-themeTextSecondary">1 items</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="menu-item-card glass-card hover-glow rounded-3xl overflow-hidden p-3 flex gap-4 transition-all duration-300 relative border-themeBorder" data-id="1" data-price="200" data-name="Starter 1" data-search-terms="starter 1   veg vegetarian" data-food-type="VEG"><!-- Item Image Wrapper --><div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden flex-shrink-0 bg-themeBgSecondary"><img src="https://dinelab.pythonanywhere.com/media/menu/items/WhatsApp_Image_2026-07-19_at_2.19.09_AM.jpeg" alt="Starter 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy"></div><!-- Content Details --><div class="flex flex-col justify-between flex-grow min-w-0"><div><!-- Badges --><div class="flex items-center gap-1.5 min-w-0"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" title="Veg"><rect x="2" y="2" width="20" height="20" rx="4" stroke="#22c55e" stroke-width="2.5"></rect><circle cx="12" cy="12" r="5" fill="#22c55e"></circle></svg><h3 class="text-base font-bold text-themeTextPrimary truncate">Starter 1</h3></div><p class="text-xs text-themeTextSecondary line-clamp-2 mt-1 leading-relaxed"></p></div><div class="flex items-center justify-between mt-3 gap-2"><!-- Price --><span class="text-base font-extrabold text-themeAccentPrimary">₹200.00</span><!-- Action Button / Controls --><div class="relative flex items-center justify-end" id="controls-container-1"><!-- Add Button (Initial State) --><button class="add-btn px-5 py-1.5 rounded-full bg-themeAccentPrimary text-white text-xs font-bold shadow-md hover:bg-themeAccentPrimary/90 active:scale-95 transition-all duration-200" data-action="add">Add</button><!-- Quantity Controls (Hidden initially) --><div class="quantity-controls hidden flex-col items-end gap-1"><div class="flex items-center bg-themeBgSecondary border border-themeBorder rounded-full p-0.5 shadow-sm"><button class="w-7 h-7 flex items-center justify-center rounded-full text-themeTextPrimary hover:bg-themeBgPrimary active:scale-90 transition-all" data-action="decrement" aria-label="Decrease quantity"><svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path></svg></button><span class="qty-display px-2 text-xs font-extrabold text-themeTextPrimary min-w-[20px] text-center">0</span><button class="w-7 h-7 flex items-center justify-center rounded-full text-themeTextPrimary hover:bg-themeBgPrimary active:scale-90 transition-all" data-action="increment" aria-label="Increase quantity"><svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12M6 12h12"></path></svg></button></div><!-- Optional Item-Level Note Trigger --><button class="note-trigger-btn text-[10px] font-semibold text-themeAccentPrimary hover:underline flex items-center gap-1 transition-all max-w-[125px] pr-0.5" data-action="item-note" type="button" title="Add special instructions"><svg class="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg><span class="note-btn-label truncate">+ Note</span></button></div></div></div></div></div><script type="module">document.addEventListener(`DOMContentLoaded`,()=>{let e=document.querySelectorAll(`.menu-item-card`),t={};try{t=JSON.parse(localStorage.getItem(`restaurant-cart`)||`{}`)}catch{t={}}e.forEach(e=>{let n=e.getAttribute(`data-id`)||``,r=e.getAttribute(`data-name`)||``,i=parseFloat(e.getAttribute(`data-price`)||`0`),a=document.getElementById(`controls-container-${n}`);if(!a)return;let o=a.querySelector(`.add-btn`),s=a.querySelector(`.quantity-controls`),c=a.querySelector(`.qty-display`),l=a.querySelector(`.note-trigger-btn`),u=a.querySelector(`.note-btn-label`),d=t[n]?.quantity||0,f=t[n]?.instructions||``;function p(){d>0?(o.classList.add(`hidden`),s.classList.remove(`hidden`),s.classList.add(`flex`),c.textContent=d.toString(),f&&f.trim().length>0?(u.textContent=f.trim(),l.title=`Special Instructions: ${f.trim()}`,l.classList.add(`font-bold`)):(u.textContent=`+ Note`,l.title=`Add special instructions`,l.classList.remove(`font-bold`))):(o.classList.remove(`hidden`),s.classList.add(`hidden`),s.classList.remove(`flex`))}function m(e){d=e,d<=0&&(f=``),p(),window.dispatchEvent(new CustomEvent(`cart-update`,{detail:{itemId:n,name:r,price:i,quantity:d,instructions:f}}))}p(),o?.addEventListener(`click`,()=>m(1)),a.querySelector(`[data-action="increment"]`)?.addEventListener(`click`,()=>{m(d+1)}),a.querySelector(`[data-action="decrement"]`)?.addEventListener(`click`,()=>{d>0&&m(d-1)}),l?.addEventListener(`click`,e=>{e.stopPropagation(),window.dispatchEvent(new CustomEvent(`open-item-instruction-modal`,{detail:{itemId:n,name:r,instructions:f}}))}),window.addEventListener(`cart-sync`,e=>{let t=e.detail||{},r=t[n]?.quantity||0,i=t[n]?.instructions||``;(r!==d||i!==f)&&(d=r,f=i,p())})})});</script></div></section></main><section class="mt-12 space-y-4 animate-slide-up" style="animation-delay: 0.4s;"><div class="flex items-center gap-2 pb-2 border-b border-themeBorder/40"><span class="text-2xl">📸</span><h2 class="text-xl font-extrabold text-themeTextPrimary tracking-tight">Vibe & Gallery</h2></div><div class="grid grid-cols-3 gap-2"><div class="relative aspect-square rounded-2xl overflow-hidden bg-themeBgSecondary border border-themeBorder/50 group"><img src="https://dinelab.pythonanywhere.com/media/restaurants/gallery/WhatsApp_Image_2026-07-19_at_2.19.09_AM.jpeg" alt="Caption 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"><p class="text-[9px] text-white truncate font-medium">Caption 1</p></div></div></div></section><section class="mt-12 space-y-4 animate-slide-up" style="animation-delay: 0.5s;"><div class="flex items-center gap-2 pb-2 border-b border-themeBorder/40"><span class="text-2xl">👤</span><h2 class="text-xl font-extrabold text-themeTextPrimary tracking-tight">Meet the Proprietor</h2></div><div class="w-full rounded-3xl border border-themeBorder/50 bg-themeCardBg/40 overflow-hidden p-6 glass-card hover-glow transition-all duration-300 flex flex-col sm:flex-row items-center gap-6"><div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border border-themeBorder/80 shadow-md flex-shrink-0"><img src="https://dinelab.pythonanywhere.com/media/restaurant/proprietor/1000184842.jpg" alt="Satyam Seth" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div><div class="text-center sm:text-left flex-grow space-y-2"><div class="space-y-0.5"><span class="text-[10px] font-bold text-themeAccentPrimary uppercase tracking-widest text-left">Proprietor</span><h3 class="text-lg font-extrabold text-themeTextPrimary">Satyam Seth</h3></div><p class="text-xs text-themeTextSecondary leading-relaxed">Welcome to Demo Restaurant! We are committed to serving you with the highest quality ingredients, warm hospitality, and an unforgettable dining experience. Thank you for choosing us.</p></div></div></section><footer class="py-8 text-center text-xs text-themeTextSecondary/50 mt-12 border-t border-themeBorder/30"><p>© 2026 Demo Restaurant. Powered by Dine Labs.</p></footer><!-- Floating Cart Button --><div id="floating-cart" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden animate-slide-up"><button id="floating-cart-btn" class="flex items-center gap-3 px-6 py-3.5 rounded-full bg-themeAccentPrimary text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"><svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg><span id="floating-cart-count" class="bg-white/20 px-2 py-0.5 rounded-full text-xs">0</span><span class="w-px h-4 bg-white/30"></span><span id="floating-cart-total">₹0.00</span></button></div><!-- Sliding Cart Drawer Overlay --><div id="cart-drawer-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"><div id="cart-drawer" class="fixed bottom-0 inset-x-0 max-w-md mx-auto rounded-t-[2.5rem] glass-effect bg-themeBgPrimary/95 shadow-2xl p-6 transition-transform duration-300 translate-y-full max-h-[85vh] flex flex-col border-t border-themeBorder"><!-- Drawer Header --><div class="flex items-center justify-between pb-4 border-b border-themeBorder/60"><h2 class="text-xl font-extrabold text-themeTextPrimary flex items-center gap-2"><svg class="w-6 h-6 text-themeAccentPrimary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Your Order</h2><button id="close-cart-btn" class="w-8 h-8 rounded-full bg-themeBgSecondary border border-themeBorder flex items-center justify-center text-themeTextPrimary hover:border-themeAccentPrimary hover:text-themeAccentPrimary transition-all duration-200" aria-label="Close cart"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><!-- Drawer Content (Items List) --><div class="flex-grow overflow-y-auto py-4 space-y-3 no-scrollbar" id="cart-items-container"><!-- Items dynamically added here --></div><!-- Customer Information Fields (Displayed when telegram_notification is true) --><div id="customer-info-section" class="py-3 border-t border-themeBorder/60 space-y-3"><div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5"><div><label for="customer-name" class="block text-[11px] font-bold text-themeTextSecondary uppercase tracking-wider mb-1">Your Name <span class="text-red-400">*</span></label><input type="text" id="customer-name" placeholder="e.g. Rahul Sharma" class="w-full text-xs p-2.5 rounded-xl bg-themeBgSecondary border border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/40 focus:outline-none focus:ring-1 focus:ring-themeAccentPrimary transition-all" required></div><div><label for="customer-phone" class="block text-[11px] font-bold text-themeTextSecondary uppercase tracking-wider mb-1">Phone Number <span class="text-red-400">*</span></label><input type="tel" id="customer-phone" placeholder="e.g. +91 9876543210" class="w-full text-xs p-2.5 rounded-xl bg-themeBgSecondary border border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/40 focus:outline-none focus:ring-1 focus:ring-themeAccentPrimary transition-all" required></div></div><div><label for="table-number" class="block text-[11px] font-bold text-themeTextSecondary uppercase tracking-wider mb-1">Table / Seat # <span class="text-themeTextSecondary/60 text-[10px] lowercase font-normal">(optional)</span></label><input type="text" id="table-number" placeholder="e.g. Table 4 or Takeaway" class="w-full text-xs p-2.5 rounded-xl bg-themeBgSecondary border border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/40 focus:outline-none focus:ring-1 focus:ring-themeAccentPrimary transition-all"></div><div id="order-error-msg" class="hidden text-xs text-red-400 bg-red-500/10 border border-red-500/20 p-2.5 rounded-xl animate-fade-in"></div></div><!-- Overall Special Notes --><div class="py-3 border-t border-themeBorder/60"><label for="cart-notes" class="block text-xs font-bold text-themeTextSecondary uppercase tracking-wider mb-2">Overall Instructions (Optional)</label><textarea id="cart-notes" rows="2" placeholder="E.g., table preference, delivery instructions, cutlery requests..." class="w-full text-sm p-3 rounded-2xl bg-themeBgSecondary border border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/40 focus:outline-none focus:ring-2 focus:ring-themeAccentPrimary/50 focus:border-themeAccentPrimary transition-all"></textarea></div><!-- Drawer Footer --><div class="pt-4 border-t border-themeBorder/60 space-y-4"><div class="flex justify-between items-center text-themeTextSecondary text-sm"><span>Items Subtotal</span><span id="cart-drawer-subtotal" class="font-bold text-themeTextPrimary">₹0.00</span></div><div class="flex justify-between items-center text-themeTextPrimary text-base font-extrabold"><span>Total Estimate</span><span id="cart-drawer-total" class="text-lg text-themeAccentPrimary">₹0.00</span></div><div class="flex gap-2.5"><button id="clear-cart-btn" class="px-4 py-3.5 rounded-2xl bg-themeBgSecondary border border-themeBorder text-themeTextSecondary font-bold text-sm hover:text-red-400 hover:border-red-400/40 active:scale-95 transition-all">Clear</button><button id="place-order-api-btn" class="flex-grow py-3.5 rounded-2xl bg-themeAccentPrimary text-white font-bold text-sm shadow-md hover:bg-themeAccentPrimary/90 active:scale-95 transition-all flex items-center justify-center gap-2"><svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg><span id="place-order-btn-label">Place Order</span></button></div></div></div></div><!-- Item Instruction Modal (Triggered directly from menu item cards or quick edit) --><div id="item-instruction-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4"><div class="w-full max-w-sm rounded-3xl glass-effect bg-themeBgPrimary/95 shadow-2xl p-6 border border-themeBorder space-y-4 animate-slide-up"><div class="flex items-center justify-between pb-3 border-b border-themeBorder/60"><div class="min-w-0 pr-2"><span class="text-[10px] font-bold text-themeAccentPrimary uppercase tracking-wider block">Special Instructions</span><h3 id="modal-item-name" class="text-base font-extrabold text-themeTextPrimary truncate">Item Name</h3></div><button id="close-instruction-modal-btn" class="w-8 h-8 rounded-full bg-themeBgSecondary border border-themeBorder flex items-center justify-center text-themeTextSecondary hover:text-themeTextPrimary hover:border-themeAccentPrimary transition-colors flex-shrink-0" aria-label="Close modal"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><div><label for="modal-instruction-input" class="block text-xs font-bold text-themeTextSecondary uppercase tracking-wider mb-2">Customization Request (Optional)</label><textarea id="modal-instruction-input" rows="3" maxlength="140" placeholder="e.g., Less spicy, no onions, extra crispy, allergy info..." class="w-full text-sm p-3 rounded-2xl bg-themeBgSecondary border border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/40 focus:outline-none focus:ring-2 focus:ring-themeAccentPrimary/50 focus:border-themeAccentPrimary transition-all resize-none"></textarea><div class="flex justify-between items-center text-[10px] text-themeTextSecondary/70 mt-1.5 px-1"><span>E.g., spices, toppings, preparation</span><span id="modal-char-count">0/140</span></div></div><div class="flex gap-2.5 pt-2"><button id="modal-clear-instruction-btn" class="px-4 py-2.5 rounded-xl bg-themeBgSecondary border border-themeBorder text-themeTextSecondary font-bold text-xs hover:text-red-400 hover:border-red-400/40 active:scale-95 transition-all">Clear</button><button id="modal-save-instruction-btn" class="flex-grow py-2.5 rounded-xl bg-themeAccentPrimary text-white font-bold text-xs shadow-md hover:bg-themeAccentPrimary/90 active:scale-95 transition-all">Save Instructions</button></div></div></div><!-- Order Confirmation Success Modal --><div id="order-success-modal" class="fixed inset-0 bg-black/75 backdrop-blur-md z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4"><div class="w-full max-w-sm rounded-[2rem] glass-effect bg-themeBgPrimary/95 shadow-2xl p-6 border border-themeBorder text-center space-y-4 animate-slide-up"><div class="w-16 h-16 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center mx-auto border border-green-500/30"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg></div><div class="space-y-1"><h3 class="text-xl font-extrabold text-themeTextPrimary">Order Placed!</h3><p class="text-xs text-themeTextSecondary">Your order has been sent to the restaurant.</p></div><div class="p-3.5 rounded-2xl bg-themeBgSecondary/60 border border-themeBorder/60 text-left space-y-2 text-xs"><div class="flex justify-between items-center"><span class="text-themeTextSecondary">Order Number:</span><span id="success-order-number" class="font-extrabold text-themeAccentPrimary">#---</span></div><div class="flex justify-between items-center"><span class="text-themeTextSecondary">Status:</span><span class="font-bold text-green-400 bg-green-500/10 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-wider">Confirmed</span></div><div class="flex justify-between items-center"><span class="text-themeTextSecondary">Total Amount:</span><span id="success-order-total" class="font-extrabold text-themeTextPrimary">₹0.00</span></div></div><button id="close-success-modal-btn" class="w-full py-3 rounded-2xl bg-themeAccentPrimary text-white font-bold text-sm shadow-md hover:bg-themeAccentPrimary/90 active:scale-95 transition-all">Awesome, Got It!</button></div></div><script>(function(){const currency = "₹";
+const whatsAppNumber = "+917235973436";
+const restaurantName = "Demo Restaurant";
+const telegramNotification = true;
+const restaurantId = "1";
+const authToken = "3e857c43cec65f5b842a9139261817fb819e716a";
+const apiBaseUrl = "https://dinelab.pythonanywhere.com";
+const tableService = true;
+
+  let cart = {};
+  const activeInstructionInputs = new Set();
+  let currentModalItemId = null;
+
+  const floatingCart = document.getElementById('floating-cart');
+  const floatingCartBtn = document.getElementById('floating-cart-btn');
+  const floatingCount = document.getElementById('floating-cart-count');
+  const floatingTotal = document.getElementById('floating-cart-total');
+
+  const overlay = document.getElementById('cart-drawer-overlay');
+  const drawer = document.getElementById('cart-drawer');
+  const closeBtn = document.getElementById('close-cart-btn');
+  const cartItemsContainer = document.getElementById('cart-items-container');
+  const subtotalDisplay = document.getElementById('cart-drawer-subtotal');
+  const totalDisplay = document.getElementById('cart-drawer-total');
+  const clearBtn = document.getElementById('clear-cart-btn');
+  const checkoutWhatsAppBtn = document.getElementById('checkout-whatsapp-btn');
+  const placeOrderApiBtn = document.getElementById('place-order-api-btn');
+  const notesArea = document.getElementById('cart-notes');
+  const orderErrorMsg = document.getElementById('order-error-msg');
+
+  // Modal elements
+  const instructionModal = document.getElementById('item-instruction-modal');
+  const modalItemName = document.getElementById('modal-item-name');
+  const modalInstructionInput = document.getElementById('modal-instruction-input');
+  const modalCharCount = document.getElementById('modal-char-count');
+  const modalCloseBtn = document.getElementById('close-instruction-modal-btn');
+  const modalClearBtn = document.getElementById('modal-clear-instruction-btn');
+  const modalSaveBtn = document.getElementById('modal-save-instruction-btn');
+
+  // Success modal elements
+  const successModal = document.getElementById('order-success-modal');
+  const successOrderNumber = document.getElementById('success-order-number');
+  const successOrderTotal = document.getElementById('success-order-total');
+  const closeSuccessBtn = document.getElementById('close-success-modal-btn');
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  // Load customer information from LocalStorage
+  function loadCustomerInfo() {
+    try {
+      const info = JSON.parse(localStorage.getItem('restaurant-customer-info') || '{}');
+      const nameInput = document.getElementById('customer-name');
+      const phoneInput = document.getElementById('customer-phone');
+      const tableInput = document.getElementById('table-number');
+      if (nameInput && info.name) nameInput.value = info.name;
+      if (phoneInput && info.phone) phoneInput.value = info.phone;
+      if (tableService && tableInput && info.table) tableInput.value = info.table;
+    } catch (e) {}
+  }
+
+  function saveCustomerInfo(name, phone, table) {
+    try {
+      localStorage.setItem('restaurant-customer-info', JSON.stringify({
+        name,
+        phone,
+        table: tableService ? table : ''
+      }));
+    } catch (e) {}
+  }
+
+  // Load cart from LocalStorage on init
+  function loadCart() {
+    try {
+      cart = JSON.parse(localStorage.getItem('restaurant-cart') || '{}');
+    } catch (e) {
+      cart = {};
+    }
+    renderCart();
+    loadCustomerInfo();
+  }
+
+  // Save cart to LocalStorage
+  function saveCart() {
+    localStorage.setItem('restaurant-cart', JSON.stringify(cart));
+  }
+
+  // Render cart content and update widgets
+  function renderCart() {
+    let totalItems = 0;
+    let totalPrice = 0;
+    cartItemsContainer.innerHTML = '';
+
+    const itemIds = Object.keys(cart);
+
+    itemIds.forEach(id => {
+      const item = cart[id];
+      if (item.quantity <= 0) return;
+
+      totalItems += item.quantity;
+      const itemSubtotal = item.price * item.quantity;
+      totalPrice += itemSubtotal;
+
+      const hasInstructions = Boolean(item.instructions && item.instructions.trim().length > 0);
+      const isEditing = activeInstructionInputs.has(id);
+
+      // Append item container to drawer
+      const itemRow = document.createElement('div');
+      itemRow.className = 'p-3.5 rounded-2xl bg-themeBgSecondary/40 border border-themeBorder/40 space-y-2.5 transition-all';
+      
+      let instructionHtml = '';
+      if (isEditing) {
+        instructionHtml = `
+          <div class="pt-2 border-t border-themeBorder/30 space-y-2 animate-fade-in" data-section="instruction-editor">
+            <input
+              type="text"
+              maxlength="140"
+              placeholder="e.g., Less spicy, no onions, extra crispy..."
+              value="${escapeHtml(item.instructions || '')}"
+              class="item-inline-input w-full text-xs px-3 py-2 rounded-xl bg-themeBgSecondary border border-themeBorder text-themeTextPrimary placeholder-themeTextSecondary/40 focus:outline-none focus:ring-1 focus:ring-themeAccentPrimary"
+              data-id="${id}"
+            />
+            <div class="flex items-center justify-end gap-2">
+              <button class="px-2.5 py-1 text-xs text-themeTextSecondary hover:text-themeTextPrimary rounded-lg" data-id="${id}" data-action="cancel-note">
+                Cancel
+              </button>
+              <button class="px-3 py-1 bg-themeAccentPrimary text-white rounded-lg text-xs font-bold shadow-sm hover:opacity-90 active:scale-95 transition-all" data-id="${id}" data-action="save-note">
+                Save Note
+              </button>
+            </div>
+          </div>
+        `;
+      } else if (hasInstructions) {
+        instructionHtml = `
+          <div class="pt-2 border-t border-themeBorder/30 flex items-start justify-between gap-2 text-xs">
+            <div class="flex items-start gap-1.5 text-themeAccentPrimary flex-grow min-w-0 bg-themeAccentPrimary/10 border border-themeAccentPrimary/20 px-2.5 py-1.5 rounded-xl">
+              <svg class="w-3.5 h-3.5 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+              <div class="min-w-0 flex-grow">
+                <span class="text-[9px] uppercase font-bold text-themeAccentPrimary tracking-wider block">Special Note</span>
+                <p class="text-xs text-themeTextPrimary break-words font-medium mt-0.5">${escapeHtml(item.instructions)}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 flex-shrink-0 pt-0.5">
+              <button class="w-6 h-6 flex items-center justify-center rounded-lg text-themeTextSecondary hover:text-themeTextPrimary hover:bg-themeBgSecondary active:scale-95 transition-all" data-id="${id}" data-action="edit-note" title="Edit special instructions">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+              </button>
+              <button class="w-6 h-6 flex items-center justify-center rounded-lg text-themeTextSecondary hover:text-red-400 hover:bg-themeBgSecondary active:scale-95 transition-all" data-id="${id}" data-action="remove-note" title="Remove special instructions">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+              </button>
+            </div>
+          </div>
+        `;
+      } else {
+        instructionHtml = `
+          <div class="pt-1 border-t border-themeBorder/20 flex items-center">
+            <button class="text-[11px] font-semibold text-themeAccentPrimary hover:underline flex items-center gap-1 py-0.5 group" data-id="${id}" data-action="open-note">
+              <svg class="w-3 h-3 group-hover:scale-110 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+              <span>Add cooking note / instructions</span>
+            </button>
+          </div>
+        `;
+      }
+
+      itemRow.innerHTML = `
+        <div class="flex items-center justify-between gap-4">
+          <div class="min-w-0 flex-grow">
+            <h4 class="text-sm font-bold text-themeTextPrimary truncate">${escapeHtml(item.name)}</h4>
+            <span class="text-xs font-semibold text-themeAccentPrimary mt-0.5 block">${currency}${item.price.toFixed(2)} each</span>
+          </div>
+          <div class="flex items-center gap-3 flex-shrink-0">
+            <div class="flex items-center bg-themeBgSecondary border border-themeBorder/60 rounded-full p-0.5">
+              <button class="w-6 h-6 flex items-center justify-center rounded-full text-themeTextSecondary hover:text-themeTextPrimary active:scale-90 transition-transform" data-id="${id}" data-action="dec" aria-label="Decrease quantity">
+                <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
+              </button>
+              <span class="text-xs font-extrabold text-themeTextPrimary px-1.5 min-w-[16px] text-center">${item.quantity}</span>
+              <button class="w-6 h-6 flex items-center justify-center rounded-full text-themeTextSecondary hover:text-themeTextPrimary active:scale-90 transition-transform" data-id="${id}" data-action="inc" aria-label="Increase quantity">
+                <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12M6 12h12"/></svg>
+              </button>
+            </div>
+            <span class="text-xs font-extrabold text-themeTextPrimary min-w-[55px] text-right">${currency}${itemSubtotal.toFixed(2)}</span>
+          </div>
+        </div>
+        ${instructionHtml}
+      `;
+
+      cartItemsContainer.appendChild(itemRow);
+    });
+
+    // Update Floating widget
+    if (totalItems > 0) {
+      floatingCount.textContent = totalItems.toString();
+      floatingTotal.textContent = `${currency}${totalPrice.toFixed(2)}`;
+      floatingCart.classList.remove('hidden');
+    } else {
+      floatingCart.classList.add('hidden');
+      closeDrawer();
+    }
+
+    // Update totals inside drawer
+    subtotalDisplay.textContent = `${currency}${totalPrice.toFixed(2)}`;
+    totalDisplay.textContent = `${currency}${totalPrice.toFixed(2)}`;
+
+    // Sync changes to the item cards
+    window.dispatchEvent(new CustomEvent('cart-sync', { detail: cart }));
+  }
+
+  // Handle updates from item cards
+  window.addEventListener('cart-update', (e) => {
+    const { itemId, name, price, quantity, instructions } = e.detail;
+    if (quantity <= 0) {
+      delete cart[itemId];
+      activeInstructionInputs.delete(itemId);
+    } else {
+      const existingInstructions = cart[itemId]?.instructions || '';
+      cart[itemId] = {
+        name,
+        price,
+        quantity,
+        instructions: instructions !== undefined ? instructions : existingInstructions
+      };
+    }
+    saveCart();
+    renderCart();
+  });
+
+  // Handle drawer click controls (increment/decrement/notes inside drawer)
+  cartItemsContainer.addEventListener('click', (e) => {
+    const target = e.target.closest('button');
+    if (!target) return;
+
+    const id = target.getAttribute('data-id');
+    const action = target.getAttribute('data-action');
+    if (!id || !action) return;
+
+    if (action === 'inc') {
+      cart[id].quantity += 1;
+      saveCart();
+      renderCart();
+    } else if (action === 'dec') {
+      cart[id].quantity -= 1;
+      if (cart[id].quantity <= 0) {
+        delete cart[id];
+        activeInstructionInputs.delete(id);
+      }
+      saveCart();
+      renderCart();
+    } else if (action === 'open-note' || action === 'edit-note') {
+      activeInstructionInputs.add(id);
+      renderCart();
+      const input = cartItemsContainer.querySelector(`input[data-id="${id}"]`);
+      if (input) {
+        input.focus();
+        input.select();
+      }
+    } else if (action === 'cancel-note') {
+      activeInstructionInputs.delete(id);
+      renderCart();
+    } else if (action === 'save-note') {
+      const input = cartItemsContainer.querySelector(`input[data-id="${id}"]`);
+      if (input) {
+        const val = input.value.trim();
+        if (val.length > 0) {
+          cart[id].instructions = val;
+        } else {
+          delete cart[id].instructions;
+        }
+      }
+      activeInstructionInputs.delete(id);
+      saveCart();
+      renderCart();
+    } else if (action === 'remove-note') {
+      if (cart[id]) {
+        delete cart[id].instructions;
+      }
+      activeInstructionInputs.delete(id);
+      saveCart();
+      renderCart();
+    }
+  });
+
+  // Handle Enter keypress in drawer inline input
+  cartItemsContainer.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && e.target.classList.contains('item-inline-input')) {
+      e.preventDefault();
+      const id = e.target.getAttribute('data-id');
+      if (id && cart[id]) {
+        const val = e.target.value.trim();
+        if (val.length > 0) {
+          cart[id].instructions = val;
+        } else {
+          delete cart[id].instructions;
+        }
+        activeInstructionInputs.delete(id);
+        saveCart();
+        renderCart();
+      }
+    } else if (e.key === 'Escape' && e.target.classList.contains('item-inline-input')) {
+      const id = e.target.getAttribute('data-id');
+      if (id) {
+        activeInstructionInputs.delete(id);
+        renderCart();
+      }
+    }
+  });
+
+  // Drawer Animation Controls
+  function openDrawer() {
+    overlay.classList.remove('hidden');
+    overlay.offsetHeight; // Force reflow
+    overlay.classList.remove('opacity-0');
+    overlay.classList.add('opacity-100');
+    drawer.classList.remove('translate-y-full');
+    drawer.classList.add('translate-y-0');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    overlay.classList.remove('opacity-100');
+    overlay.classList.add('opacity-0');
+    drawer.classList.remove('translate-y-0');
+    drawer.classList.add('translate-y-full');
+    
+    setTimeout(() => {
+      if (overlay.classList.contains('opacity-0')) {
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }, 300);
+  }
+
+  floatingCartBtn?.addEventListener('click', openDrawer);
+  closeBtn?.addEventListener('click', closeDrawer);
+  overlay?.addEventListener('click', (e) => {
+    if (e.target === overlay) closeDrawer();
+  });
+
+  // Clear Cart
+  clearBtn?.addEventListener('click', () => {
+    cart = {};
+    activeInstructionInputs.clear();
+    saveCart();
+    renderCart();
+    closeDrawer();
+  });
+
+  // Item Instruction Modal Controls
+  function openInstructionModal(itemId, itemName, currentInstructions = '') {
+    currentModalItemId = itemId;
+    modalItemName.textContent = itemName;
+    modalInstructionInput.value = currentInstructions;
+    modalCharCount.textContent = `${currentInstructions.length}/140`;
+
+    instructionModal.classList.remove('hidden');
+    instructionModal.offsetHeight; // Force reflow
+    instructionModal.classList.remove('opacity-0');
+    instructionModal.classList.add('opacity-100');
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(() => {
+      modalInstructionInput.focus();
+      modalInstructionInput.select();
+    }, 100);
+  }
+
+  function closeInstructionModal() {
+    instructionModal.classList.remove('opacity-100');
+    instructionModal.classList.add('opacity-0');
+    setTimeout(() => {
+      instructionModal.classList.add('hidden');
+      if (overlay.classList.contains('hidden') && (!successModal || successModal.classList.contains('hidden'))) {
+        document.body.style.overflow = '';
+      }
+      currentModalItemId = null;
+    }, 300);
+  }
+
+  window.addEventListener('open-item-instruction-modal', (e) => {
+    const { itemId, name, instructions } = e.detail;
+    const currentNote = instructions || cart[itemId]?.instructions || '';
+    openInstructionModal(itemId, name, currentNote);
+  });
+
+  modalInstructionInput?.addEventListener('input', () => {
+    modalCharCount.textContent = `${modalInstructionInput.value.length}/140`;
+  });
+
+  modalSaveBtn?.addEventListener('click', () => {
+    if (currentModalItemId && cart[currentModalItemId]) {
+      const val = modalInstructionInput.value.trim();
+      if (val.length > 0) {
+        cart[currentModalItemId].instructions = val;
+      } else {
+        delete cart[currentModalItemId].instructions;
+      }
+      saveCart();
+      renderCart();
+    }
+    closeInstructionModal();
+  });
+
+  modalClearBtn?.addEventListener('click', () => {
+    if (currentModalItemId && cart[currentModalItemId]) {
+      delete cart[currentModalItemId].instructions;
+      saveCart();
+      renderCart();
+    }
+    closeInstructionModal();
+  });
+
+  modalCloseBtn?.addEventListener('click', closeInstructionModal);
+  instructionModal?.addEventListener('click', (e) => {
+    if (e.target === instructionModal) closeInstructionModal();
+  });
+
+  // Success Confirmation Modal Controls
+  function showOrderSuccessModal(order) {
+    if (!successModal) return;
+    if (successOrderNumber) {
+      successOrderNumber.textContent = order.order_number || `#${order.id || 'CONFIRMED'}`;
+    }
+    if (successOrderTotal) {
+      const amount = order.total_amount ? parseFloat(order.total_amount).toFixed(2) : '0.00';
+      successOrderTotal.textContent = `${currency}${amount}`;
+    }
+    successModal.classList.remove('hidden');
+    successModal.offsetHeight;
+    successModal.classList.remove('opacity-0');
+    successModal.classList.add('opacity-100');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSuccessModal() {
+    if (!successModal) return;
+    successModal.classList.remove('opacity-100');
+    successModal.classList.add('opacity-0');
+    setTimeout(() => {
+      successModal.classList.add('hidden');
+      if (overlay.classList.contains('hidden')) {
+        document.body.style.overflow = '';
+      }
+    }, 300);
+  }
+
+  closeSuccessBtn?.addEventListener('click', closeSuccessModal);
+  successModal?.addEventListener('click', (e) => {
+    if (e.target === successModal) closeSuccessModal();
+  });
+
+  function showError(msg) {
+    if (!orderErrorMsg) {
+      alert(msg);
+      return;
+    }
+    orderErrorMsg.textContent = msg;
+    orderErrorMsg.classList.remove('hidden');
+  }
+
+  function hideError() {
+    if (orderErrorMsg) {
+      orderErrorMsg.classList.add('hidden');
+      orderErrorMsg.textContent = '';
+    }
+  }
+
+  // Direct Order API Placement (when telegramNotification === true)
+  placeOrderApiBtn?.addEventListener('click', async () => {
+    const itemIds = Object.keys(cart).filter(id => cart[id].quantity > 0);
+    if (itemIds.length === 0) {
+      showError('Your cart is empty. Please add dishes to place an order.');
+      return;
+    }
+
+    const nameInput = document.getElementById('customer-name');
+    const phoneInput = document.getElementById('customer-phone');
+    const tableInput = document.getElementById('table-number');
+
+    const customerName = nameInput ? nameInput.value.trim() : '';
+    const customerPhone = phoneInput ? phoneInput.value.trim() : '';
+    const tableNumber = (tableService && tableInput) ? tableInput.value.trim() : '';
+    const specialInstructions = notesArea ? notesArea.value.trim() : '';
+
+    if (!customerName) {
+      showError('Please provide your name.');
+      nameInput?.focus();
+      return;
+    }
+
+    if (!customerPhone) {
+      showError('Please provide your phone number.');
+      phoneInput?.focus();
+      return;
+    }
+
+    hideError();
+    saveCustomerInfo(customerName, customerPhone, tableNumber);
+
+    // Build items matching OpenAPI OrderItemCreate schema
+    const orderItems = itemIds.map(id => {
+      const parsedId = parseInt(id, 10);
+      return {
+        menu_item_id: isNaN(parsedId) ? id : parsedId,
+        quantity: cart[id].quantity,
+        special_instructions: (cart[id].instructions || '').trim()
+      };
+    });
+
+    // Build payload matching OpenAPI OrderCreate schema
+    const payload = {
+      customer_name: customerName,
+      customer_phone: customerPhone,
+      table_number: tableNumber || '',
+      special_instructions: specialInstructions,
+      source: 'WEB',
+      items: orderItems
+    };
+
+    // Determine target API endpoint using api_base_url from menu.json as base URL
+    let targetRestId = restaurantId || "1";
+    const baseUrl = (apiBaseUrl || '').trim().replace(/\/+$/, '');
+    const endpoint = `${baseUrl}/v1/orders/${targetRestId}/`;
+
+    // Set loading indicator on Place Order button
+    const originalBtnHtml = placeOrderApiBtn.innerHTML;
+    placeOrderApiBtn.disabled = true;
+    placeOrderApiBtn.classList.add('opacity-75', 'cursor-not-allowed');
+    placeOrderApiBtn.innerHTML = `
+      <svg class="w-4 h-4 animate-spin text-white flex-shrink-0" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      <span>Placing Order...</span>
+    `;
+
+    try {
+      const headers = {
+        'Content-Type': 'application/json'
+      };
+      if (authToken) {
+        headers['Authorization'] = authToken.startsWith('Token ') ? authToken : `Token ${authToken}`;
+      }
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        let errorMsg = `Error ${response.status}: Failed to place order.`;
+        try {
+          const errData = await response.json();
+          if (errData.detail) {
+            errorMsg = errData.detail;
+          } else if (errData.items && Array.isArray(errData.items)) {
+            errorMsg = errData.items.join(', ');
+          } else if (typeof errData === 'object') {
+            errorMsg = Object.entries(errData)
+              .map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(', ') : v}`)
+              .join('; ');
+          }
+        } catch (e) {}
+        throw new Error(errorMsg);
+      }
+
+      const orderData = await response.json();
+
+      // Clear cart on successful order
+      cart = {};
+      saveCart();
+      renderCart();
+      closeDrawer();
+
+      // Show Order Success Modal
+      showOrderSuccessModal(orderData);
+    } catch (err) {
+      showError(err.message || 'Unable to connect to order server. Please try again.');
+    } finally {
+      placeOrderApiBtn.disabled = false;
+      placeOrderApiBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+      placeOrderApiBtn.innerHTML = originalBtnHtml;
+    }
+  });
+
+  // WhatsApp Checkout Messaging (Fallback when telegramNotification is false)
+  checkoutWhatsAppBtn?.addEventListener('click', () => {
+    const itemIds = Object.keys(cart);
+    if (itemIds.length === 0) return;
+
+    let message = `*📋 NEW ORDER REQUEST*\n`;
+    message += `*Restaurant:* ${restaurantName}\n`;
+    message += `*Date/Time:* ${new Date().toLocaleString()}\n`;
+    message += `=============================\n\n`;
+
+    let total = 0;
+    itemIds.forEach(id => {
+      const item = cart[id];
+      const subtotal = item.price * item.quantity;
+      total += subtotal;
+      message += `🔸 *${item.name}*\n   Qty: ${item.quantity} × ${currency}${item.price.toFixed(2)} = *${currency}${subtotal.toFixed(2)}*\n`;
+      if (item.instructions && item.instructions.trim().length > 0) {
+        message += `   ↳ 📝 _Note: ${item.instructions.trim()}_\n`;
+      }
+      message += `\n`;
+    });
+
+    const notes = notesArea ? notesArea.value.trim() : '';
+    if (notes.length > 0) {
+      message += `📝 *Overall Instructions:*\n   "${notes}"\n\n`;
+    }
+
+    message += `=============================\n`;
+    message += `💰 *Total Estimated Value:* *${currency}${total.toFixed(2)}*\n\n`;
+    message += `Thank you for ordering with us! Please reply to confirm availability and estimated prep time.`;
+
+    const cleanNumber = (whatsAppNumber || '').replace(/[+\s-]/g, '');
+    const whatsAppUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsAppUrl, '_blank');
+  });
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', loadCart);
+})();</script></div></body></html>

@@ -1,0 +1,104 @@
+{
+  "restaurant": {
+    "id": 1,
+    "name": "Demo Restaurant",
+    "slug": "demo-restaurant",
+    "code": "DEMORESTAU",
+    "tagline": "Test is Best",
+    "contact_phone": "+917235973436",
+    "contact_email": "satyam1998.1998@gmail.com",
+    "whatsapp_number": "+917235973436",
+    "address": "Roadways Lalganj",
+    "google_map_link": "https://maps.app.goo.gl/6uTBdXihJsqQd3vK7",
+    "google_map_embed_link": null,
+    "food_type": "BOTH",
+    "logo_url": "./images/1000275885.png",
+    "proprietor_name": "Satyam Seth",
+    "proprietor_photo_url": "https://dinelab.pythonanywhere.com/media/restaurant/proprietor/1000184842.jpg",
+    "cover_image_url": null,
+    "cover_images": [],
+    "business_hours": {
+      "monday": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "tuesday": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "wednesday": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "thursday": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "friday": {
+        "open": "12:00",
+        "close": "23:30"
+      },
+      "saturday": null,
+      "sunday": {
+        "open": "11:00",
+        "close": "22:00"
+      }
+    },
+    "social_links": {
+      "instagram": "https://instagram.com",
+      "facebook": "https://facebook.com"
+    },
+    "dump_assets": true,
+    "telegram_notification": true,
+    "table_service": true
+  },
+  "theme": {
+    "name": "elegant",
+    "settings": {}
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Starter",
+      "display_order": 0,
+      "items": [
+        {
+          "id": 1,
+          "name": "Starter 1",
+          "description": "",
+          "price": "200.00",
+          "image_url": "https://dinelab.pythonanywhere.com/media/menu/items/WhatsApp_Image_2026-07-19_at_2.19.09_AM.jpeg",
+          "food_type": "VEG",
+          "tags": [],
+          "is_available": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Main Course",
+      "display_order": 1,
+      "items": []
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "image_url": "https://dinelab.pythonanywhere.com/media/restaurants/gallery/WhatsApp_Image_2026-07-19_at_2.19.09_AM.jpeg",
+      "caption": "Caption 1"
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "description": "",
+      "discount_percentage": "10.00",
+      "coupon_code": "ASP",
+      "image_url": "https://dinelab.pythonanywhere.com/media/restaurants/offers/WhatsApp_Image_2026-07-19_at_2.19.09_AM.jpeg"
+    }
+  ],
+  "auth_token": "3e857c43cec65f5b842a9139261817fb819e716a",
+  "api_base_url": "https://dinelab.pythonanywhere.com",
+  "template_version": "v0.1.4"
+}
